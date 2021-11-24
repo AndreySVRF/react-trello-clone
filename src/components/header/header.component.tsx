@@ -3,6 +3,7 @@ import styles from './header.module.scss';
 import {Button} from '../button';
 import {Bell, Close, Info, Loupe} from '../../assets/images/icons';
 import avatar from '../../assets/images/avatar-1.jpg';
+import {Dropdown} from '../dropdown';
 
 const Header = () => (
   <div className={styles.header}>
@@ -12,8 +13,13 @@ const Header = () => (
       </a>
       <div className={styles.topNav}>
         <div className={styles.navGroup}>
-          <Button isBgTransparent={true} isArrowDown={true}>Workspaces</Button>
-          <Button isBgTransparent={true} isArrowDown={true}>Recent</Button>
+          <Dropdown title="Заголовок" buttonTitle="Workspace">
+            lpl
+          </Dropdown>
+          <Dropdown title="Заголовок" buttonTitle="Recent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            accusantium dicta ducimus earum eius error facilis hic labore magnam magni minus nemo, numquam obcaecati
+            perferendis rem repellat reprehenderit ut vitae?</Dropdown>
+
           <Button isBgTransparent={true} isArrowDown={true}>Starred</Button>
           <Button isBgTransparent={true} isArrowDown={true}>Templates</Button>
         </div>

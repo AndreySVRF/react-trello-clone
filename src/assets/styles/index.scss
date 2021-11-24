@@ -4,6 +4,7 @@
   --base-color: #026AA7;
   --text-dark: #172b4d;
   --dark-gray: #6b778c;
+  --light-gray: #dfe1e6;
 }
 
 * {
@@ -11,6 +12,8 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  height: -webkit-fill-available;
+
 }
 
 body {
